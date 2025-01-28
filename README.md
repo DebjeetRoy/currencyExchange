@@ -9,7 +9,7 @@ Test Coverage: Unit and integration tests with coverage reports.
 1. Project Setup
 Clone the Repository
 Start by cloning the project repository:
-git clone https://github.com/your-username/currencyExchange.git
+git clone ${git url}
 
 At start we have to do git init for initializing the git and then do initial commit and push changes.
 Then create feature branch from main branch and worked on it.
