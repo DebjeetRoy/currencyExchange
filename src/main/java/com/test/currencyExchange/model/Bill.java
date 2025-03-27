@@ -1,19 +1,14 @@
 package com.test.currencyExchange.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.List;
 
 
 public class Bill {
     private double totalAmount;
+    private User user;
+    private String tenure;
     private String originalCurrency;
     private String targetCurrency;
-    private String userType;
-    private int customerTenureYears;
-    private String category;
     private List<Item> items;
 
     public double getTotalAmount() {
@@ -40,28 +35,19 @@ public class Bill {
         this.targetCurrency = targetCurrency;
     }
 
-    public String getUserType() {
-        return userType;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserType(String userType) {
-        this.userType = userType;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public int getCustomerTenureYears() {
-        return customerTenureYears;
+    public String getTenure() {
+        return tenure;
     }
-
-    public void setCustomerTenureYears(int customerTenureYears) {
-        this.customerTenureYears = customerTenureYears;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
+    public void setTenure(String tenure) {
+        this.tenure = tenure;
     }
 
     public List<Item> getItems() {

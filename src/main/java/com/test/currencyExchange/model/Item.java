@@ -1,9 +1,5 @@
 package com.test.currencyExchange.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 public class Item {
     private String name;
     private String category;

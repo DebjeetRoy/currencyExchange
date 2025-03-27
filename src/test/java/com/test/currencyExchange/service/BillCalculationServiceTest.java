@@ -2,15 +2,11 @@ package com.test.currencyExchange.service;
 
 import com.test.currencyExchange.model.Bill;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.client.RestTemplate;
 
 import java.lang.reflect.Field;
@@ -37,7 +33,7 @@ public class BillCalculationServiceTest {
         bill.setOriginalCurrency("USD");
         bill.setTargetCurrency("EUR");
         bill.setUserType("employee");
-        bill.setCustomerTenureYears(3);
+        bill.setCustomerTenureYears("3");
         bill.setCategory("electronics");
 
         Mockito.when(currencyExchangeService.getExchangeRate("USD", "EUR")).thenReturn(0.85);
