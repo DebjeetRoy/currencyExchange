@@ -1,12 +1,11 @@
 package com.test.currencyExchange.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Map;
 
-
+@NoArgsConstructor
+@AllArgsConstructor
 public class ExchangeRateResponse {
     private String base;
     private Map<String, Double> rates;
